@@ -1,0 +1,16 @@
+<style>
+textarea{
+width:100%;
+height:300px;
+}
+</style>
+<script>
+function eexecute(){
+	var t = document.getElementsByTagName("textarea")[0];
+	var ss = t.value;
+	eval(ss);
+}
+</script>
+<h1>JS</h1>
+<textarea></textarea>
+<button onclick="eexecute()">Execute!</button>
